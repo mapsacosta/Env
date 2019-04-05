@@ -1,0 +1,51 @@
+" Syntax highlighting
+ syntax on
+"
+" " Determine file type based on name and/or contents
+ filetype indent plugin on
+"
+" " Security
+ set modelines=0
+"
+" " Show line numbers
+ set number
+"
+" " Blink cursor on error instead of beeping
+ set visualbell
+"
+ set wildmenu
+"
+ set ruler
+"
+" " Show prelim command in bottom console
+ set showcmd
+"
+ set cursorline
+ set cursorcolumn
+ hi CursorColumn ctermbg=8
+ set showmatch
+"
+" " Highlight when searching
+ set hlsearch
+ set incsearch
+"
+" " Use case insensitive search, except when using capital letters
+ set ignorecase
+ set smartcase
+"
+" "Always display the status line
+ set laststatus=2
+"
+" " "Enable use of the mouse for all modes
+ "set mouse=a
+ set tabstop=2 shiftwidth=2 expandtab
+ set autoindent
+ set smartindent
+"
+ map Y y$"
+" " Start, end of line
+ nnorema B ^
+ nnorema E $
+"
+" " Set colorscheme
+ colo torte
